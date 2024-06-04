@@ -74,3 +74,4 @@ D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_D
 D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.WpfApp\bin\Debug\net8.0-windows\DiamondShopSystem.Common.pdb
 D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.WpfApp\bin\Debug\net8.0-windows\DiamondShopSystem.Data.pdb
 D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.WpfApp\obj\Debug\net8.0-windows\DiamondS.88804444.Up2Date
+D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.WpfApp\obj\Debug\net8.0-windows\DiamondShopSystem.WpfApp.sourcelink.json

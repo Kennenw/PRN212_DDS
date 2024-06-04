@@ -12,3 +12,4 @@ D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_D
 D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.Data\obj\Debug\net8.0\DiamondShopSystem.Data.pdb
 D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.Data\obj\Debug\net8.0\DiamondShopSystem.Data.genruntimeconfig.cache
 D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.Data\obj\Debug\net8.0\ref\DiamondShopSystem.Data.dll
+D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.Data\obj\Debug\net8.0\DiamondShopSystem.Data.sourcelink.json

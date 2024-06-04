@@ -34,13 +34,15 @@ namespace DiamondShopSystem.WpfApp.UI
         {
             try
             {
-                var item = await _business.GetById(int.Parse(CustomerId.Text));
+                int idd = -1;
+                int .TryParse(CustomerId.Text, out idd);
+                var item = await _business.GetById(idd);
 
                 if (item.Data == null)
                 {
                     var customer = new Customer()
                     {
-                        CustomerId = int.Parse(CustomerId.Text),
+                        //CustomerId = int.Parse(CustomerId.Text),
                         CustomerName = CustomerName.Text,
                         Phone = Phone.Text,
                         Address = Address.Text,
@@ -54,7 +56,7 @@ namespace DiamondShopSystem.WpfApp.UI
                 else
                 {
                     var customer = item.Data as Customer;
-                    customer.CustomerId = int.Parse(CustomerId.Text);
+                    //customer.CustomerId = int.Parse(CustomerId.Text);
                     customer.CustomerName = CustomerName.Text;
                     customer.Phone = Phone.Text;
                     customer.Address = Address.Text;
@@ -64,10 +66,10 @@ namespace DiamondShopSystem.WpfApp.UI
                     var result = await _business.Update(customer);
                     MessageBox.Show(result.Message, "Update");
                 }
-                    CustomerId.Text = string.Empty;
-                    CustomerName.Text = string.Empty;
-                    Phone.Text = string.Empty;
-                    Address.Text = string.Empty;
+                CustomerId.Text = string.Empty;
+                CustomerName.Text = string.Empty;
+                Phone.Text = string.Empty;
+                Address.Text = string.Empty;
                 Email.Text = string.Empty;
                 Password.Text = string.Empty;
                 this.LoadGrdCustomer();
@@ -78,6 +80,8 @@ namespace DiamondShopSystem.WpfApp.UI
             }
 
         }
+
+
         private async void ButtonCancel_Click(object sender, RoutedEventArgs e)
         {
 
@@ -86,9 +90,36 @@ namespace DiamondShopSystem.WpfApp.UI
         {
 
         }
-        private async void grdCustomer_MouseDouble_Click(object sender, RoutedEventArgs e) { }
-        private async void LoadGrdCustomer()
+        private async void grdCustomer_MouseDouble_Click(object sender, RoutedEventArgs e)
         {
+            //MessageBox.Show("Double Click on Grid");
+            DataGrid grd = sender as DataGrid;
+            if (grd != null && grd.SelectedItems != null && grd.SelectedItems.Count == 1)
+            {
+                var row = grd.ItemContainerGenerator.ContainerFromItem(grd.SelectedItem) as DataGridRow;
+                if (row != null)
+                {
+                    var item = row.Item as Customer;
+                    if (item != null)
+                    {
+                        var customerResult = await _business.GetById(item.CustomerId);
+
+                        if (customerResult.Status > 0 && customerResult.Data != null)
+                        {
+                            item = customerResult.Data as Customer;
+                            CustomerId.Text = item.CustomerId.ToString();
+                            CustomerName.Text = item.CustomerName;
+                            Phone.Text = item.Phone;
+                            Address.Text = item.Address;
+                            Email.Text = item.Email;
+                            Password.Text = item.Password;
+                        }
+                    }
+                }
+            }
+        }
+            private async void LoadGrdCustomer()
+            {
             var result = await _business.GetAll();
 
             if (result.Status > 0 && result.Data != null)

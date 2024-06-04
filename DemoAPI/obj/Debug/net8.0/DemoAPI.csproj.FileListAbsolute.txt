@@ -256,3 +256,4 @@ D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_D
 D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DemoAPI\obj\Debug\net8.0\DemoAPI.pdb
 D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DemoAPI\obj\Debug\net8.0\DemoAPI.genruntimeconfig.cache
 D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DemoAPI\obj\Debug\net8.0\ref\DemoAPI.dll
+D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DemoAPI\obj\Debug\net8.0\DemoAPI.sourcelink.json

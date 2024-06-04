@@ -26,7 +26,7 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <Label Grid.Column="0" Grid.Row="0" Content="Code" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
-                    <TextBox Grid.Column="1" Grid.Row="0" x:Name="CustomerId" Height="25" Text="{Binding Path=Customer.CustomerId, Mode=TwoWay}"  Margin="5"  Width="180" HorizontalAlignment="Left"/>
+                    <TextBox Grid.Column="1" Grid.Row="0" x:Name="CustomerId" Height="25" Text="{Binding Path=Customer.CustomerId, Mode=TwoWay}" IsReadOnly="True" Margin="5"  Width="180" HorizontalAlignment="Left"/>
                     <Label Grid.Column="2" Grid.Row="0" Content="Name" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
                     <TextBox Grid.Row="0" Grid.Column="3" x:Name="CustomerName" Height="25" Text="{Binding Path=Customer.CustomerName, Mode=TwoWay}"  Margin="5"  Width="180" HorizontalAlignment="Left"/>
                     <Label Grid.Column="4" Grid.Row="0" Content="Phone" HorizontalAlignment="Left" VerticalContentAlignment="Center" />

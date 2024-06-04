@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiamondShopSystem.WpfApp", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiamondShopSystem.Common", "DiamondShopSystem.Common\DiamondShopSystem.Common.csproj", "{46E23127-501C-4162-ADC2-A0E4A1369533}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoAPI", "DemoAPI\DemoAPI.csproj", "{E33768FF-CE3A-472B-A3AA-4335415E91ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoAPI", "DemoAPI\DemoAPI.csproj", "{E33768FF-CE3A-472B-A3AA-4335415E91ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
