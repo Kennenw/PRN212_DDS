@@ -88,7 +88,21 @@ namespace DiamondShopSystem.WpfApp.UI
         }
         private async void grdCustomer_ButtonDelete_Click(object sender, RoutedEventArgs e)
         {
+            Button btn = (Button)sender;
 
+            string customerId = btn.CommandParameter.ToString();
+
+            //MessageBox.Show(currencyCode);
+
+            if (!string.IsNullOrEmpty(customerId))
+            {
+                if (MessageBox.Show("Do you want to delete this item?", "Delete", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+                {
+                    var result = await _business.DeleteById(int.Parse(customerId));
+                    MessageBox.Show($"{result.Message}", "Delete");
+                    this.LoadGrdCustomer();
+                }
+            }
         }
         private async void grdCustomer_MouseDouble_Click(object sender, RoutedEventArgs e)
         {
