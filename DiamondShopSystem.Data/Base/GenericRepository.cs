@@ -131,5 +131,9 @@ namespace DiamondShopSystem.Data.Base
         {
             return await _context.Set<T>().FindAsync(code);
         }
+        public IQueryable<T> Query()
+        {
+            return _context.Set<T>().AsQueryable();
+        }
     }
 }

@@ -6,17 +6,15 @@
         xmlns:local="clr-namespace:DiamondShopSystem.WpfApp"
         mc:Ignorable="d"
         Title="DSS" Height="450" Width="1000">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="122*"/>
-        </Grid.ColumnDefinitions>
-        <Menu Height="30" Name="menu1" Margin="0,0,0,0" VerticalAlignment="Top" BorderThickness="2" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2">
-            <MenuItem Header="Menu" IsCheckable="False" FontSize="16">
+    <Grid Margin="0,0,0,-17">
+        <Menu Height="30" Name="menu1" Margin="0,0,0,0" VerticalAlignment="Top" BorderThickness="2" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="3">
+            <MenuItem Header="Menu" IsCheckable="False" FontSize="16" >
                 <MenuItem Header="Customer" IsCheckable="False" FontSize="12" Click="Open_wCustomer_Click">
 
                 </MenuItem>
-
+                <MenuItem Header="SearchCustomer" IsCheckable="False" FontSize="12" Click="Open_wSearchCustomer_Click">
+                
+                </MenuItem>
             </MenuItem>
         </Menu>
     </Grid>

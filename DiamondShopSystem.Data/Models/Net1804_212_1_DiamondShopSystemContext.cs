@@ -8,15 +8,15 @@ namespace DiamondShopSystem.Data.Models;
 
 public partial class Net1804_212_1_DiamondShopSystemContext : DbContext
 {
-    public Net1804_212_1_DiamondShopSystemContext()
-    {
-
-    }
-
     public Net1804_212_1_DiamondShopSystemContext(DbContextOptions<Net1804_212_1_DiamondShopSystemContext> options)
         : base(options)
     {
     }
+    public Net1804_212_1_DiamondShopSystemContext() { }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+     => optionsBuilder.UseSqlServer("Server=(local);Database= Net1804_212_1_DiamondShopSystem;UID=sa;PWD=123456;TrustServerCertificate=True");
+
 
     public virtual DbSet<Category> Categories { get; set; }
 
@@ -29,9 +29,6 @@ public partial class Net1804_212_1_DiamondShopSystemContext : DbContext
     public virtual DbSet<OrderDetail> OrderDetails { get; set; }
 
     public virtual DbSet<Product> Products { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Server=(local);Database= Net1804_212_1_DiamondShopSystem;UID=sa;PWD=123456;TrustServerCertificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -58,10 +55,16 @@ public partial class Net1804_212_1_DiamondShopSystemContext : DbContext
             entity.ToTable("Customer");
 
             entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
+            entity.Property(e => e.CreateDate).HasColumnType("datetime");
             entity.Property(e => e.CustomerName).HasMaxLength(200);
             entity.Property(e => e.Email).HasMaxLength(50);
+            entity.Property(e => e.Gender).HasMaxLength(50);
+            entity.Property(e => e.ImgUrl)
+                .HasMaxLength(50)
+                .IsFixedLength();
             entity.Property(e => e.Password).HasMaxLength(50);
             entity.Property(e => e.Phone).HasMaxLength(10);
+            entity.Property(e => e.UpdateTime).HasColumnType("datetime");
         });
 
         modelBuilder.Entity<Order>(entity =>

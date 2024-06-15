@@ -2,6 +2,7 @@
 using DiamondShopSystem.Common;
 using DiamondShopSystem.Data;
 using DiamondShopSystem.Data.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,7 @@ namespace DiamondShopSystem.Business
         Task<IBusinessResult> Save(Customer customer);
         Task<IBusinessResult> Update(Customer customer);
         Task<IBusinessResult> DeleteById(int id);
+        Task<IBusinessResult> SearchCustomers(string? name, string? phone, string? gender, string? address, string? email, bool? isActive);
     }
 
     public class CustomerBusiness : ICustomerBusiness
@@ -129,6 +131,59 @@ namespace DiamondShopSystem.Business
             catch (Exception ex)
             {
                 return new BusinessResult(-4, ex.ToString());
+            }
+        }
+
+
+        public async Task<IBusinessResult> SearchCustomers(string? name , string? phone , string? gender, string? address, string? email , bool? isActive)
+        {
+            try
+            {
+                IQueryable<Customer> query = _unitOfWork.CustomerRepository.Query();
+
+                if (!string.IsNullOrEmpty(name))
+                {
+                    query = query.Where(c => EF.Functions.Like(c.CustomerName, $"%{name}%"));
+                }
+
+                if (!string.IsNullOrEmpty(phone))
+                {
+                    query = query.Where(c => EF.Functions.Like(c.Phone, $"%{phone}%"));
+                }
+
+                if (!string.IsNullOrEmpty(gender))
+                {
+                    query = query.Where(c => c.Gender.Equals(gender));
+                }
+
+                if (!string.IsNullOrEmpty(address))
+                {
+                    query = query.Where(c => EF.Functions.Like(c.Address, $"%{address}%"));
+                }
+
+                if (!string.IsNullOrEmpty(email))
+                {
+                    query = query.Where(c => EF.Functions.Like(c.Email, $"%{email}%"));
+                }
+
+                if (isActive.HasValue)
+                {
+                    query = query.Where(c => c.IsActive == isActive.Value);
+                }
+                var customers = await query.ToListAsync();
+
+                if (customers.Count > 0)
+                {
+                    return new BusinessResult(Const.SUCCESS_READ_CODE, Const.SUCCESS_READ_MSG, customers);
+                }
+                else
+                {
+                    return new BusinessResult(Const.WARNING_NO_DATA_CODE, Const.WARNING_NO_DATA__MSG);
+                }
+            }
+            catch (Exception ex)
+            {
+                return new BusinessResult(Const.ERROR_EXCEPTION, ex.Message);
             }
         }
 

@@ -19,5 +19,15 @@ public partial class Customer
 
     public string Password { get; set; }
 
+    public string ImgUrl { get; set; }
+
+    public DateTime? CreateDate { get; set; }
+
+    public string Gender { get; set; }
+
+    public bool? IsActive { get; set; }
+
+    public DateTime? UpdateTime { get; set; }
+
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 }

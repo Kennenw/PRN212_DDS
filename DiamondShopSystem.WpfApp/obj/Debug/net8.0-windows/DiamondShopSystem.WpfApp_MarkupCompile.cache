@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.WpfApp\App.xaml
-21813104404
+4-1531131587
 
-5-1627180032
+71623625254
 241-1453474572
-MainWindow.xaml;UI\WCustomer.xaml;
+MainWindow.xaml;UI\WCustomer.xaml;UI\WSearchCustomer.xaml;UI\WViewCustomer.xaml;
 
 False
 

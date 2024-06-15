@@ -27,7 +27,7 @@ namespace DiamondShopSystem.WpfApp.UI
         public WCustomer()
         {
             InitializeComponent();
-            this._business ??= new CustomerBusiness();    
+            this._business ??= new CustomerBusiness();
             this.LoadGrdCustomer();
         }
         private async void ButtonSave_Click(object sender, RoutedEventArgs e)
@@ -35,19 +35,23 @@ namespace DiamondShopSystem.WpfApp.UI
             try
             {
                 int idd = -1;
-                int .TryParse(CustomerId.Text, out idd);
+                int.TryParse(CustomerId.Text, out idd);
                 var item = await _business.GetById(idd);
 
                 if (item.Data == null)
                 {
                     var customer = new Customer()
                     {
-                        //CustomerId = int.Parse(CustomerId.Text),
                         CustomerName = CustomerName.Text,
                         Phone = Phone.Text,
                         Address = Address.Text,
                         Email = Email.Text,
                         Password = Password.Text,
+                        ImgUrl = ImgUrl.Text,
+                        CreateDate = CreateDate.SelectedDate,
+                        Gender = Gender.Text,
+                        IsActive = IsActive.IsChecked,
+                        UpdateTime = UpdateTime.SelectedDate
                     };
 
                     var result = await _business.Save(customer);
@@ -62,16 +66,16 @@ namespace DiamondShopSystem.WpfApp.UI
                     customer.Address = Address.Text;
                     customer.Email = Email.Text;
                     customer.Password = Password.Text;
+                    customer.ImgUrl = ImgUrl.Text;
+                    customer.CreateDate = CreateDate.SelectedDate;
+                    customer.Gender = Gender.Text;
+                    customer.IsActive = IsActive.IsChecked;
+                    customer.UpdateTime = UpdateTime.SelectedDate;
 
                     var result = await _business.Update(customer);
                     MessageBox.Show(result.Message, "Update");
                 }
-                CustomerId.Text = string.Empty;
-                CustomerName.Text = string.Empty;
-                Phone.Text = string.Empty;
-                Address.Text = string.Empty;
-                Email.Text = string.Empty;
-                Password.Text = string.Empty;
+                ClearForm();
                 this.LoadGrdCustomer();
             }
             catch (Exception ex)
@@ -81,11 +85,26 @@ namespace DiamondShopSystem.WpfApp.UI
 
         }
 
+        private void ClearForm()
+        {
+            CustomerId.Text = string.Empty;
+            CustomerName.Text = string.Empty;
+            Phone.Text = string.Empty;
+            Address.Text = string.Empty;
+            Email.Text = string.Empty;
+            Password.Text = string.Empty;
+            ImgUrl.Text = string.Empty;
+            CreateDate.SelectedDate = null;
+            Gender.Text = string.Empty;
+            IsActive.IsChecked = false;
+            UpdateTime.SelectedDate = null;
+        }
 
         private async void ButtonCancel_Click(object sender, RoutedEventArgs e)
         {
-
+            ClearForm();
         }
+
         private async void grdCustomer_ButtonDelete_Click(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
@@ -127,13 +146,18 @@ namespace DiamondShopSystem.WpfApp.UI
                             Address.Text = item.Address;
                             Email.Text = item.Email;
                             Password.Text = item.Password;
+                            ImgUrl.Text = item.ImgUrl;
+                            CreateDate.SelectedDate = item.CreateDate;
+                            Gender.Text = item.Gender;
+                            IsActive.IsChecked = item.IsActive;
+                            UpdateTime.SelectedDate = item.UpdateTime;
                         }
                     }
                 }
             }
         }
-            private async void LoadGrdCustomer()
-            {
+        private async void LoadGrdCustomer()
+        {
             var result = await _business.GetAll();
 
             if (result.Status > 0 && result.Data != null)
@@ -144,6 +168,8 @@ namespace DiamondShopSystem.WpfApp.UI
             {
                 grdCustomer.ItemsSource = new List<Customer>();
             }
+
+
         }
     }
 }

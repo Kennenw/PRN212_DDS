@@ -27,5 +27,11 @@ namespace DiamondShopSystem.WpfApp
             p.Owner = this;
             p.Show();
         }
+        private void Open_wSearchCustomer_Click(object sender, RoutedEventArgs e)
+        {
+            var p = new WSearchCustomer();
+            p.Owner = this;
+            p.Show();
+        }
     }
 }
