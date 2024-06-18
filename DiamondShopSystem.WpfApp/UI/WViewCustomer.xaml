@@ -5,66 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DiamondShopSystem.WpfApp.UI"
         mc:Ignorable="d"
-        Title="View Customer" Height="450" Width="800">
+        Title="View Customer" Height="516" Width="800">
     <Grid>
-        <StackPanel Orientation="Vertical" Margin="10">
-            <GroupBox Header="Customer Detail" Margin="10">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
+        <StackPanel Margin="10">
+            <TextBlock Text="Code: " FontWeight="Bold"/>
+            <TextBlock x:Name="CustomerId" Margin="0,0,0,10"/>
 
-                    <Label Grid.Row="0" Grid.Column="0" Content="Customer ID" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="0" Grid.Column="1" x:Name="CustomerId" Text="{Binding Path=Customer.CustomerId, Mode=TwoWay}" Height="25" Margin="5" IsReadOnly="True"/>
+            <TextBlock Text="Name: " FontWeight="Bold"/>
+            <TextBlock x:Name="CustomerName" Margin="0,0,0,10"/>
 
-                    <Label Grid.Row="1" Grid.Column="0" Content="Name" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="1" Grid.Column="1" x:Name="CustomerName" Text="{Binding Path=Customer.CustomerName, Mode=TwoWay}" Height="25" Margin="5" IsReadOnly="True"/>
+            <TextBlock Text="Phone: " FontWeight="Bold"/>
+            <TextBlock x:Name="CustomerPhone" Margin="0,0,0,10"/>
 
-                    <Label Grid.Row="2" Grid.Column="0" Content="Phone" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="2" Grid.Column="1" x:Name="Phone" Text="{Binding Path=Customer.Phone, Mode=TwoWay}" Height="25" Margin="5" IsReadOnly="True"/>
+            <TextBlock Text="Address: " FontWeight="Bold"/>
+            <TextBlock x:Name="CustomerAddress" Margin="0,0,0,10"/>
 
-                    <Label Grid.Row="3" Grid.Column="0" Content="Address" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="3" Grid.Column="1" x:Name="Address" Text="{Binding Path=Customer.Address, Mode=TwoWay}" Height="25" Margin="5" IsReadOnly="True"/>
+            <TextBlock Text="Gender: " FontWeight="Bold"/>
+            <TextBlock x:Name="CustomerGender" Margin="0,0,0,10"/>
 
-                    <Label Grid.Row="4" Grid.Column="0" Content="Email" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="4" Grid.Column="1" x:Name="Email" Text="{Binding Path=Customer.Email, Mode=TwoWay}" Height="25" Margin="5" IsReadOnly="True"/>
+            <TextBlock Text="Email: " FontWeight="Bold"/>
+            <TextBlock x:Name="CustomerEmail" Margin="0,0,0,10"/>
 
-                    <Label Grid.Row="5" Grid.Column="0" Content="Password" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="5" Grid.Column="1" x:Name="Password" Text="{Binding Path=Customer.Password, Mode=TwoWay}" Height="25" Margin="5" IsReadOnly="True"/>
+            <TextBlock Text="Image Url: " FontWeight="Bold"/>
+            <TextBlock x:Name="ImageUrl" Margin="0,0,0,10"/>
 
-                    <Label Grid.Row="6" Grid.Column="0" Content="Image URL" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="6" Grid.Column="1" x:Name="ImgUrl" Text="{Binding Path=Customer.ImgUrl, Mode=TwoWay}" Height="25" Margin="5" IsReadOnly="True"/>
+            <TextBlock Text="Create At: " FontWeight="Bold"/>
+            <TextBlock x:Name="CreateAt" Margin="0,0,0,10"/>
 
-                    <Label Grid.Row="7" Grid.Column="0" Content="Create Date" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <DatePicker Grid.Row="7" Grid.Column="1" x:Name="CreateDate" SelectedDate="{Binding Path=Customer.CreateDate, Mode=TwoWay}" Height="25" Margin="5" />
+            <TextBlock Text="Update At: " FontWeight="Bold"/>
+            <TextBlock x:Name="UpdateAt" Margin="0,0,0,10"/>
 
-                    <Label Grid.Row="8" Grid.Column="0" Content="Gender" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="8" Grid.Column="1" x:Name="Gender" Text="{Binding Path=Customer.Gender, Mode=TwoWay}" Height="25" Margin="5" IsReadOnly="True"/>
+            <TextBlock Text="Active: " FontWeight="Bold"/>
+            <CheckBox x:Name="IsActive" IsEnabled="False"/>
 
-                    <Label Grid.Row="10" Grid.Column="0" Content="Is Active" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <CheckBox Grid.Row="10" Grid.Column="1" x:Name="IsActive"  IsChecked="{Binding Path=Customer.IsActive, Mode=TwoWay}" Margin="5" IsEnabled="False"/>
-
-                    <Label Grid.Row="9" Grid.Column="0" Content="UpdateTime" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <DatePicker Grid.Row="9" Grid.Column="1" x:Name="UpdateTime" SelectedDate="{Binding Path=Customer.UpdateTime, Mode=TwoWay}" Height="25" Margin="5" />
-
-                </Grid>
-            </GroupBox>
-            <StackPanel Height="40" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
-                <Button x:Name="ButtonClose" Content="Close" Height="30" Width="80" Click="ButtonClose_Click"/>
+            <StackPanel Height="40" Orientation="Horizontal" HorizontalAlignment="Right" Width="89" RenderTransformOrigin="0.279,0.685">
+                <Button x:Name="Close" Content="Close" Height="30" Width="80" Click="ButtonClose_Click"/>
             </StackPanel>
         </StackPanel>
     </Grid>

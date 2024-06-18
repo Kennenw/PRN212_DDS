@@ -52,9 +52,15 @@ namespace DiamondShopSystem.WpfApp.UI
             var button = sender as Button;         
             if (button != null)
             {
-                var customer = button.CommandParameter as Customer;
-                var customerDetail = new WViewCustomer(customer.CustomerId);
-                customerDetail.ShowDialog();
+                var customer = (grdCustomer.ItemsSource as List<Customer>)?.FirstOrDefault();
+                if (customer != null)
+                {
+                    var customerDetail = new WViewCustomer(customer.CustomerId);
+                    customerDetail.ShowDialog();
+                }else
+                {
+                    MessageBox.Show("No customer found to view details.", "Error");
+                }
             }
 
         }
