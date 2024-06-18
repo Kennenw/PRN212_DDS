@@ -8,7 +8,7 @@
         Title="Customer" Height="450" Width="1000">
     <Grid>
         <StackPanel Orientation="Vertical">
-            <GroupBox Header="Customer Form" Margin="10">
+            <GroupBox Header="Customer Form" Margin="10" >
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>

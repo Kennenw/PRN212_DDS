@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\FPT\\SE5\\PRN212\\Project\\Net1804_212_1_DiamondShopSystem\\Source\\Net1804_212_1_DiamondShopSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B476A8C-0BE9-4CE1-9263-682F0D915BBB}|DiamondShopSystem.WpfApp\\DiamondShopSystem.WpfApp.csproj|d:\\fpt\\se5\\prn212\\project\\net1804_212_1_diamondshopsystem\\source\\net1804_212_1_diamondshopsystem\\diamondshopsystem.wpfapp\\ui\\wcustomer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B476A8C-0BE9-4CE1-9263-682F0D915BBB}|DiamondShopSystem.WpfApp\\DiamondShopSystem.WpfApp.csproj|solutionrelative:diamondshopsystem.wpfapp\\ui\\wcustomer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C11EC13A-B667-4C72-B72C-A8CDD42D8045}|DiamondShopSystem.Data\\DiamondShopSystem.Data.csproj|d:\\fpt\\se5\\prn212\\project\\net1804_212_1_diamondshopsystem\\source\\net1804_212_1_diamondshopsystem\\diamondshopsystem.data\\models\\net1804_212_1_diamondshopsystemcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11EC13A-B667-4C72-B72C-A8CDD42D8045}|DiamondShopSystem.Data\\DiamondShopSystem.Data.csproj|solutionrelative:diamondshopsystem.data\\models\\net1804_212_1_diamondshopsystemcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4149BF-0FD8-4D03-AF7A-31A336F1DAAB}|DiamondShopSystem.Business\\DiamondShopSystem.Business.csproj|d:\\fpt\\se5\\prn212\\project\\net1804_212_1_diamondshopsystem\\source\\net1804_212_1_diamondshopsystem\\diamondshopsystem.business\\customerbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4149BF-0FD8-4D03-AF7A-31A336F1DAAB}|DiamondShopSystem.Business\\DiamondShopSystem.Business.csproj|solutionrelative:diamondshopsystem.business\\customerbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C11EC13A-B667-4C72-B72C-A8CDD42D8045}|DiamondShopSystem.Data\\DiamondShopSystem.Data.csproj|d:\\fpt\\se5\\prn212\\project\\net1804_212_1_diamondshopsystem\\source\\net1804_212_1_diamondshopsystem\\diamondshopsystem.data\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11EC13A-B667-4C72-B72C-A8CDD42D8045}|DiamondShopSystem.Data\\DiamondShopSystem.Data.csproj|solutionrelative:diamondshopsystem.data\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B476A8C-0BE9-4CE1-9263-682F0D915BBB}|DiamondShopSystem.WpfApp\\DiamondShopSystem.WpfApp.csproj|d:\\fpt\\se5\\prn212\\project\\net1804_212_1_diamondshopsystem\\source\\net1804_212_1_diamondshopsystem\\diamondshopsystem.wpfapp\\ui\\wcustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8B476A8C-0BE9-4CE1-9263-682F0D915BBB}|DiamondShopSystem.WpfApp\\DiamondShopSystem.WpfApp.csproj|solutionrelative:diamondshopsystem.wpfapp\\ui\\wcustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B476A8C-0BE9-4CE1-9263-682F0D915BBB}|DiamondShopSystem.WpfApp\\DiamondShopSystem.WpfApp.csproj|d:\\fpt\\se5\\prn212\\project\\net1804_212_1_diamondshopsystem\\source\\net1804_212_1_diamondshopsystem\\diamondshopsystem.wpfapp\\ui\\wviewcustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8B476A8C-0BE9-4CE1-9263-682F0D915BBB}|DiamondShopSystem.WpfApp\\DiamondShopSystem.WpfApp.csproj|solutionrelative:diamondshopsystem.wpfapp\\ui\\wviewcustomer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,6 +63,81 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WCustomer.xaml.cs",
+              "DocumentMoniker": "D:\\FPT\\SE5\\PRN212\\Project\\Net1804_212_1_DiamondShopSystem\\Source\\Net1804_212_1_DiamondShopSystem\\DiamondShopSystem.WpfApp\\UI\\WCustomer.xaml.cs",
+              "RelativeDocumentMoniker": "DiamondShopSystem.WpfApp\\UI\\WCustomer.xaml.cs",
+              "ToolTip": "D:\\FPT\\SE5\\PRN212\\Project\\Net1804_212_1_DiamondShopSystem\\Source\\Net1804_212_1_DiamondShopSystem\\DiamondShopSystem.WpfApp\\UI\\WCustomer.xaml.cs",
+              "RelativeToolTip": "DiamondShopSystem.WpfApp\\UI\\WCustomer.xaml.cs",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAswKgAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T09:00:07.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\FPT\\SE5\\PRN212\\Project\\Net1804_212_1_DiamondShopSystem\\Source\\Net1804_212_1_DiamondShopSystem\\DiamondShopSystem.Data\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "DiamondShopSystem.Data\\Models\\Customer.cs",
+              "ToolTip": "D:\\FPT\\SE5\\PRN212\\Project\\Net1804_212_1_DiamondShopSystem\\Source\\Net1804_212_1_DiamondShopSystem\\DiamondShopSystem.Data\\Models\\Customer.cs",
+              "RelativeToolTip": "DiamondShopSystem.Data\\Models\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T08:47:36.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Net1804_212_1_DiamondShopSystemContext.cs",
+              "DocumentMoniker": "D:\\FPT\\SE5\\PRN212\\Project\\Net1804_212_1_DiamondShopSystem\\Source\\Net1804_212_1_DiamondShopSystem\\DiamondShopSystem.Data\\Models\\Net1804_212_1_DiamondShopSystemContext.cs",
+              "RelativeDocumentMoniker": "DiamondShopSystem.Data\\Models\\Net1804_212_1_DiamondShopSystemContext.cs",
+              "ToolTip": "D:\\FPT\\SE5\\PRN212\\Project\\Net1804_212_1_DiamondShopSystem\\Source\\Net1804_212_1_DiamondShopSystem\\DiamondShopSystem.Data\\Models\\Net1804_212_1_DiamondShopSystemContext.cs",
+              "RelativeToolTip": "DiamondShopSystem.Data\\Models\\Net1804_212_1_DiamondShopSystemContext.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAAAE8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T08:46:41.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WViewCustomer.xaml",
+              "DocumentMoniker": "D:\\FPT\\SE5\\PRN212\\Project\\Net1804_212_1_DiamondShopSystem\\Source\\Net1804_212_1_DiamondShopSystem\\DiamondShopSystem.WpfApp\\UI\\WViewCustomer.xaml",
+              "RelativeDocumentMoniker": "DiamondShopSystem.WpfApp\\UI\\WViewCustomer.xaml",
+              "ToolTip": "D:\\FPT\\SE5\\PRN212\\Project\\Net1804_212_1_DiamondShopSystem\\Source\\Net1804_212_1_DiamondShopSystem\\DiamondShopSystem.WpfApp\\UI\\WViewCustomer.xaml",
+              "RelativeToolTip": "DiamondShopSystem.WpfApp\\UI\\WViewCustomer.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-18T08:22:56.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerBusiness.cs",
+              "DocumentMoniker": "D:\\FPT\\SE5\\PRN212\\Project\\Net1804_212_1_DiamondShopSystem\\Source\\Net1804_212_1_DiamondShopSystem\\DiamondShopSystem.Business\\CustomerBusiness.cs",
+              "RelativeDocumentMoniker": "DiamondShopSystem.Business\\CustomerBusiness.cs",
+              "ToolTip": "D:\\FPT\\SE5\\PRN212\\Project\\Net1804_212_1_DiamondShopSystem\\Source\\Net1804_212_1_DiamondShopSystem\\DiamondShopSystem.Business\\CustomerBusiness.cs",
+              "RelativeToolTip": "DiamondShopSystem.Business\\CustomerBusiness.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAywCMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T08:16:56.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WCustomer.xaml",
+              "DocumentMoniker": "D:\\FPT\\SE5\\PRN212\\Project\\Net1804_212_1_DiamondShopSystem\\Source\\Net1804_212_1_DiamondShopSystem\\DiamondShopSystem.WpfApp\\UI\\WCustomer.xaml",
+              "RelativeDocumentMoniker": "DiamondShopSystem.WpfApp\\UI\\WCustomer.xaml",
+              "ToolTip": "D:\\FPT\\SE5\\PRN212\\Project\\Net1804_212_1_DiamondShopSystem\\Source\\Net1804_212_1_DiamondShopSystem\\DiamondShopSystem.WpfApp\\UI\\WCustomer.xaml",
+              "RelativeToolTip": "DiamondShopSystem.WpfApp\\UI\\WCustomer.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-18T03:57:36.864Z",
+              "EditorCaption": ""
             }
           ]
         }

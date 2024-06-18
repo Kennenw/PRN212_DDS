@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace DiamondShopSystem.Data.Models;
 
@@ -14,8 +15,25 @@ public partial class Net1804_212_1_DiamondShopSystemContext : DbContext
     }
     public Net1804_212_1_DiamondShopSystemContext() { }
 
+
+    public static string GetConnectionString(string connectionStringName)
+    {
+        var config = new ConfigurationBuilder()
+            .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+            .AddJsonFile("appsettings.json")
+            .Build();
+
+        string connectionString = config.GetConnectionString(connectionStringName);
+        return connectionString;
+    }
+
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-     => optionsBuilder.UseSqlServer("Server=(local);Database= Net1804_212_1_DiamondShopSystem;UID=sa;PWD=123456;TrustServerCertificate=True");
+        => optionsBuilder.UseSqlServer(GetConnectionString("DefaultConnection"));
+
+
+    //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    // => optionsBuilder.UseSqlServer("Server=(local);Database= Net1804_212_1_DiamondShopSystem;UID=sa;PWD=123456;TrustServerCertificate=True");
 
 
     public virtual DbSet<Category> Categories { get; set; }
