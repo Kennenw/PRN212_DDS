@@ -87,8 +87,7 @@
               "RelativeToolTip": "DiamondShopSystem.Data\\Models\\Customer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T08:47:36.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T08:47:36.008Z"
             },
             {
               "$type": "Document",
@@ -100,8 +99,7 @@
               "RelativeToolTip": "DiamondShopSystem.Data\\Models\\Net1804_212_1_DiamondShopSystemContext.cs",
               "ViewState": "AQIAAEYAAAAAAAAAAAAAAE8AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T08:46:41.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T08:46:41.9Z"
             },
             {
               "$type": "Document",
@@ -124,8 +122,7 @@
               "RelativeToolTip": "DiamondShopSystem.Business\\CustomerBusiness.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAywCMAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T08:16:56.175Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T08:16:56.175Z"
             },
             {
               "$type": "Document",
@@ -136,8 +133,7 @@
               "ToolTip": "D:\\FPT\\SE5\\PRN212\\Project\\Net1804_212_1_DiamondShopSystem\\Source\\Net1804_212_1_DiamondShopSystem\\DiamondShopSystem.WpfApp\\UI\\WCustomer.xaml",
               "RelativeToolTip": "DiamondShopSystem.WpfApp\\UI\\WCustomer.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-18T03:57:36.864Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T03:57:36.864Z"
             }
           ]
         }
