@@ -8,7 +8,7 @@
         Title="Customer" Height="450" Width="1000">
     <Grid>
         <StackPanel Orientation="Vertical">
-            <GroupBox Header="Customer Form" Margin="10" >
+            <GroupBox Header="Customer Form" Margin="10">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
@@ -25,33 +25,33 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
-                    <Label Grid.Row="0" Grid.Column="0" Content="Code" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="0" Grid.Column="1" x:Name="CustomerId" Height="25" Text="{Binding Path=Customer.CustomerId, Mode=TwoWay}" IsReadOnly="True" Margin="5" Width="180" HorizontalAlignment="Left"/>
-                    <Label Grid.Row="0" Grid.Column="2" Content="Name" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="0" Grid.Column="3" x:Name="CustomerName" Height="25" Text="{Binding Path=Customer.CustomerName, Mode=TwoWay}" Margin="5" Width="180" HorizontalAlignment="Left"/>
+                    <Label Grid.Row="0" Grid.Column="0" Content="Code" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBox Grid.Row="0" Grid.Column="1" x:Name="CustomerId" Height="25"  IsReadOnly="True" Margin="5" Width="180" HorizontalAlignment="Left"/>
+                    <Label Grid.Row="0" Grid.Column="2" Content="Name" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBox Grid.Row="0" Grid.Column="3" x:Name="CustomerName" Height="25"  Margin="5" Width="180" HorizontalAlignment="Left"/>
 
-                    <Label Grid.Row="0" Grid.Column="4" Content="Phone" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="0" Grid.Column="5" x:Name="Phone" Height="25" Text="{Binding Path=Customer.Phone, Mode=TwoWay}" Margin="5" Width="180" HorizontalAlignment="Left"/>
-                    <Label Grid.Row="1" Grid.Column="0" Content="Address" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="1" Grid.Column="1" x:Name="Address" Height="25" Text="{Binding Path=Customer.Address, Mode=TwoWay}" Margin="5" Width="180" HorizontalAlignment="Left"/>
+                    <Label Grid.Row="0" Grid.Column="4" Content="Phone" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBox Grid.Row="0" Grid.Column="5" x:Name="Phone" Height="25"  Margin="5" Width="180" HorizontalAlignment="Left"/>
+                    <Label Grid.Row="1" Grid.Column="0" Content="Address" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBox Grid.Row="1" Grid.Column="1" x:Name="Address" Height="25"  Margin="5" Width="180" HorizontalAlignment="Left"/>
 
-                    <Label Grid.Row="1" Grid.Column="2" Content="Email" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="1" Grid.Column="3" x:Name="Email" Height="25" Text="{Binding Path=Customer.Email, Mode=TwoWay}" Margin="5" Width="180" HorizontalAlignment="Left"/>
-                    <Label Grid.Row="1" Grid.Column="4" Content="Password" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="1" Grid.Column="5" x:Name="Password" Height="25" Text="{Binding Path=Customer.Password, Mode=TwoWay}" Margin="5" Width="180" HorizontalAlignment="Left"/>
+                    <Label Grid.Row="1" Grid.Column="2" Content="Email" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBox Grid.Row="1" Grid.Column="3" x:Name="Email" Height="25"  Margin="5" Width="180" HorizontalAlignment="Left"/>
+                    <Label Grid.Row="1" Grid.Column="4" Content="Password" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBox Grid.Row="1" Grid.Column="5" x:Name="Password" Height="25"  Margin="5" Width="180" HorizontalAlignment="Left"/>
 
-                    <Label Grid.Row="2" Grid.Column="0" Content="ImgUrl" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="2" Grid.Column="1" x:Name="ImgUrl" Height="25" Text="{Binding Path=Customer.ImgUrl, Mode=TwoWay}" Margin="5" Width="180" HorizontalAlignment="Left"/>
-                    <Label Grid.Row="2" Grid.Column="2" Content="CreateDate" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <DatePicker Grid.Row="2" Grid.Column="3" x:Name="CreateDate" SelectedDate="{Binding Path=Customer.CreateDate, Mode=TwoWay}" Margin="5" Width="180" HorizontalAlignment="Left"/>
+                    <Label Grid.Row="2" Grid.Column="0" Content="ImgUrl" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBox Grid.Row="2" Grid.Column="1" x:Name="ImgUrl" Height="25" Margin="5" Width="180" HorizontalAlignment="Left"/>
+                    <Label Grid.Row="2" Grid.Column="2" Content="CreateDate" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <DatePicker Grid.Row="2" Grid.Column="3" x:Name="CreateDate" Margin="5" Width="180" HorizontalAlignment="Left"/>
 
-                    <Label Grid.Row="2" Grid.Column="4" Content="Gender" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <TextBox Grid.Row="2" Grid.Column="5" x:Name="Gender" Height="25" Text="{Binding Path=Customer.Gender, Mode=TwoWay}" Margin="5" Width="180" HorizontalAlignment="Left"/>
-                    <Label Grid.Row="3" Grid.Column="2" Content="IsActive" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <CheckBox Grid.Row="3" Grid.Column="3" x:Name="IsActive" IsChecked="{Binding Path=Customer.IsActive, Mode=TwoWay}" Margin="5" HorizontalAlignment="Left"/>
+                    <Label Grid.Row="2" Grid.Column="4" Content="Gender" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBox Grid.Row="2" Grid.Column="5" x:Name="Gender" Height="25"  Margin="5" Width="180" HorizontalAlignment="Left"/>
+                    <Label Grid.Row="3" Grid.Column="2" Content="IsActive" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <CheckBox Grid.Row="3" Grid.Column="3" x:Name="IsActive"  Margin="5" HorizontalAlignment="Left"/>
 
-                    <Label Grid.Row="3" Grid.Column="0" Content="UpdateTime" HorizontalAlignment="Left" VerticalAlignment="Center" />
-                    <DatePicker Grid.Row="3" Grid.Column="1" x:Name="UpdateTime" SelectedDate="{Binding Path=Customer.UpdateTime, Mode=TwoWay}" Margin="5" Width="180" HorizontalAlignment="Left"/>
+                    <Label Grid.Row="3" Grid.Column="0" Content="UpdateTime" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <DatePicker Grid.Row="3" Grid.Column="1" x:Name="UpdateTime"  Margin="5" Width="180" HorizontalAlignment="Left"/>
                 </Grid>
             </GroupBox>
             <StackPanel Height="40" Orientation="Horizontal" HorizontalAlignment="Right" Width="171">
@@ -71,20 +71,19 @@
                         <DataGridTextColumn Header="ImgUrl" Binding="{Binding Path=ImgUrl}" Width="100" IsReadOnly="True"/>
                         <DataGridTextColumn Header="CreateDate" Binding="{Binding Path=CreateDate}" Width="100" IsReadOnly="True"/>
                         <DataGridTextColumn Header="Gender" Binding="{Binding Path=Gender}" Width="100" IsReadOnly="True"/>
-                            <DataGridTextColumn Header="IsActive" Binding="{Binding Path=IsActive}" Width="100" IsReadOnly="True"/>
-                            <DataGridTextColumn Header="UpdateTime" Binding="{Binding Path=UpdateTime}" Width="100" IsReadOnly="True"/>
-                            <DataGridTemplateColumn Width="50">
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Button Content="Delete" x:Name="ButtonDelete" CommandParameter="{Binding Path=CustomerId}"
+                        <DataGridTextColumn Header="IsActive" Binding="{Binding Path=IsActive}" Width="100" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="UpdateTime" Binding="{Binding Path=UpdateTime}" Width="100" IsReadOnly="True"/>
+                        <DataGridTemplateColumn Width="50">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Content="Delete" x:Name="ButtonDelete" CommandParameter="{Binding Path=CustomerId}"
                                             Click="grdCustomer_ButtonDelete_Click"/>
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
                     </DataGrid.Columns>
                 </DataGrid>
             </StackPanel>
         </StackPanel>
     </Grid>
-
 </Window>

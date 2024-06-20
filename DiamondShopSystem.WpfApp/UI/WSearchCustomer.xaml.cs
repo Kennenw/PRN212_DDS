@@ -49,20 +49,15 @@ namespace DiamondShopSystem.WpfApp.UI
 
         private async void ButtonViewDetail_Click(object sender, RoutedEventArgs e)
         {
-            var button = sender as Button;         
-            if (button != null)
+            if (grdCustomer.SelectedItem is Customer selectedCustomer)
             {
-                var customer = (grdCustomer.ItemsSource as List<Customer>)?.FirstOrDefault();
-                if (customer != null)
-                {
-                    var customerDetail = new WViewCustomer(customer.CustomerId);
-                    customerDetail.ShowDialog();
-                }else
-                {
-                    MessageBox.Show("No customer found to view details.", "Error");
-                }
+                var customerDetail = new WViewCustomer(selectedCustomer.CustomerId);
+                customerDetail.ShowDialog();
             }
-
+            else
+            {
+                MessageBox.Show("No customer selected to view details.", "Error");
+            }
         }
 
         private async void LoadGrdCustomer()
@@ -81,13 +76,28 @@ namespace DiamondShopSystem.WpfApp.UI
 
         }
 
-        private async void grdCustomer_MouseDouble_Click(object sender, RoutedEventArgs e)
+
+        private async void ButtonAdd_Click(object sender, RoutedEventArgs e)
         {
-            if (grdCustomer.SelectedItem is Customer selectedCustomer)
-            {
-                var detailWindow = new WViewCustomer(selectedCustomer.CustomerId);
-                detailWindow.ShowDialog();
+            var customerWindow = new WCustomer();
+            customerWindow.ShowDialog();
+            LoadGrdCustomer();
+        }
+
+
+        private async void grdCustomer_MouseDouble_Click(object sender, MouseButtonEventArgs e)
+        {
+           if(sender is DataGrid grid) 
+           {
+                var customer = grid.SelectedItem as Customer;
+                if (customer != null)
+                {
+                    var customerView = new WCustomer(customer.CustomerId);
+                    customerView.ShowDialog();
+
+                }
             }
+            
         }
 
     }

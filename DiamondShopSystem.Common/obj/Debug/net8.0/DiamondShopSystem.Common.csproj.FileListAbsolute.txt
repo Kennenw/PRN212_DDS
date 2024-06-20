@@ -1,0 +1,12 @@
+D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.Common\bin\Debug\net8.0\DiamondShopSystem.Common.deps.json
+D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.Common\bin\Debug\net8.0\DiamondShopSystem.Common.dll
+D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.Common\bin\Debug\net8.0\DiamondShopSystem.Common.pdb
+D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.Common\obj\Debug\net8.0\DiamondShopSystem.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.Common\obj\Debug\net8.0\DiamondShopSystem.Common.AssemblyInfoInputs.cache
+D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.Common\obj\Debug\net8.0\DiamondShopSystem.Common.AssemblyInfo.cs
+D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.Common\obj\Debug\net8.0\DiamondShopSystem.Common.csproj.CoreCompileInputs.cache
+D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.Common\obj\Debug\net8.0\DiamondShopSystem.Common.sourcelink.json
+D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.Common\obj\Debug\net8.0\DiamondShopSystem.Common.dll
+D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.Common\obj\Debug\net8.0\refint\DiamondShopSystem.Common.dll
+D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.Common\obj\Debug\net8.0\DiamondShopSystem.Common.pdb
+D:\FPT\SE5\PRN212\Project\Net1804_212_1_DiamondShopSystem\Source\Net1804_212_1_DiamondShopSystem\DiamondShopSystem.Common\obj\Debug\net8.0\ref\DiamondShopSystem.Common.dll

@@ -46,7 +46,7 @@
             </GroupBox>
             <StackPanel Height="40" Orientation="Horizontal" HorizontalAlignment="Right" Width="171">
                 <Button x:Name="ButtonSearch" Content="Search" Height="30" Width="80" Click="ButtonSearch_Click"/>
-                <Button x:Name="ButtonViewDetail" Content="ViewDetail" Height="30" Width="80" Click="ButtonViewDetail_Click"/>
+                <Button x:Name="ButtonAdd" Content="Add New" Height="30" Width="80" Click="ButtonAdd_Click"/>
             </StackPanel>
             <StackPanel Height="210">
                 <DataGrid x:Name="grdCustomer" AutoGenerateColumns="False" ItemsSource="{Binding Customers}" CanUserAddRows="False" Height="200" Margin="10"
@@ -66,8 +66,7 @@
                         <DataGridTemplateColumn Width="50">
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
-                                    <!--<Button Content="Delete" x:Name="ButtonDelete" CommandParameter="{Binding Path=CustomerId}"
-                                    Click="grdCustomer_ButtonDelete_Click"/>-->
+                                    <Button x:Name="ButtonViewDetail" Content="View"  CommandParameter="{Binding Path=CustomerId}" Click="ButtonViewDetail_Click"/>
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
                         </DataGridTemplateColumn>

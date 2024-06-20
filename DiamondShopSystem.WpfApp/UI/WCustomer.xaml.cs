@@ -30,6 +30,14 @@ namespace DiamondShopSystem.WpfApp.UI
             this._business ??= new CustomerBusiness();
             this.LoadGrdCustomer();
         }
+
+        public WCustomer(int id)
+        {
+            InitializeComponent();
+            this._business ??= new CustomerBusiness();
+            this.LoadGrdCustomer(id);
+        }
+
         private async void ButtonSave_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -75,6 +83,7 @@ namespace DiamondShopSystem.WpfApp.UI
                     var result = await _business.Update(customer);
                     MessageBox.Show(result.Message, "Update");
                 }
+
                 ClearForm();
                 this.LoadGrdCustomer();
             }
@@ -102,7 +111,7 @@ namespace DiamondShopSystem.WpfApp.UI
 
         private async void ButtonCancel_Click(object sender, RoutedEventArgs e)
         {
-            ClearForm();
+            this.ClearForm();
         }
 
         private async void grdCustomer_ButtonDelete_Click(object sender, RoutedEventArgs e)
@@ -156,6 +165,7 @@ namespace DiamondShopSystem.WpfApp.UI
                 }
             }
         }
+
         private async void LoadGrdCustomer()
         {
             var result = await _business.GetAll();
@@ -171,5 +181,31 @@ namespace DiamondShopSystem.WpfApp.UI
 
 
         }
+
+        private async void LoadGrdCustomer(int customerId)
+        {
+            var customerResult = await _business.GetById(customerId);
+            if (customerResult.Status > 0 && customerResult.Data != null)
+            {
+                this.LoadGrdCustomer();
+                var customer = customerResult.Data as Customer;
+                CustomerId.Text = customer.CustomerId.ToString();
+                CustomerName.Text = customer.CustomerName;
+                Phone.Text = customer.Phone;
+                Address.Text = customer.Address;
+                Email.Text = customer.Email;
+                Password.Text = customer.Password;
+                ImgUrl.Text = customer.ImgUrl;
+                CreateDate.SelectedDate = customer.CreateDate;
+                Gender.Text = customer.Gender;
+                IsActive.IsChecked = customer.IsActive;
+                UpdateTime.SelectedDate = customer.UpdateTime;
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy");
+            }
+        }
+
     }
 }
